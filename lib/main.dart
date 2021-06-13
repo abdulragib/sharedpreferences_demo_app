@@ -151,3 +151,14 @@ Future<String> readData() async {
 
 //The try block embeds code that might possibly result in an exception. The on block is used when the exception type needs to be specified.
 //The catch block is used when the handler needs the exception object.
+
+//If you have a relatively small collection of key-values to save, you can use the shared_preferences plugin.
+//
+// Normally, you would have to write native platform integrations for storing data on both iOS and Android. Fortunately, the shared_preferences plugin can be used to persist key-value data on disk. The shared preferences plugin wraps NSUserDefaults on iOS and SharedPreferences on Android, providing a persistent store for simple data.
+//
+// This recipe uses the following steps:
+//
+// Add the dependency.
+// Save data.
+// Read data.
+// Remove data.
